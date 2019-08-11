@@ -37,7 +37,7 @@ pipeline {
             steps {
                     //withMaven(maven : 'LocalMaven'){
 		    sshagent(['tomcat']){
-			sh 'ssh root@13.232.136.207'
+			//sh 'ssh root@13.232.136.207'
 			sh  'echo shiraj'  
                        //sh 'sudo su'
 		       //sh 'chmod 777 /var/lib/tomcat/webapps/'
