@@ -37,7 +37,7 @@ pipeline {
             steps {
                     withMaven(maven : 'LocalMaven'){
                      
-                       sh 'scp -o StrictHostKeyChecking=no **/*.war /var/lib/tomcat/webapps/'
+                       sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/pipeline/webapp/target/webapp.war /var/lib/tomcat/webapps/'
                  }
         }
         }
